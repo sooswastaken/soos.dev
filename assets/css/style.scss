@@ -72,7 +72,7 @@ body.light-mode {
 			font-size: 4vh;
 			padding-bottom: 0.16em;
 			margin-left: 0.2em;
-			font-weight: 600;
+			font-weight: 400;
 		}
 	}
 
@@ -121,44 +121,19 @@ body.light-mode {
 
 .content {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-	.text-video {
-		video {
-			position: absolute;
-			// center the video
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			object-fit: cover;
-			overflow: hidden;
-			width: 80%;
-			height: 10em;
-		}
-		.text {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 80%;
-			height: 10em;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: rgb(0, 0, 0);
-			overflow: hidden;
-			background: rgb(255, 255, 255);
-			// q: how do I change the color of the backgrund? it only works with black and I want to use gray
-			// a: use rgba(0,0,0,0.5) instead of #000
-
-			mix-blend-mode: screen;
-			overflow: hidden;
-			p {
-				font-size: 5vw;
-				line-height: 1;
-				font-weight: 900;
-				font-family: sans-serif;
-			}
-		}
+	h1 {
+		font-weight: 900;
+		font-size: 10vh;
+		background-image: url(/assets/images/text.gif);
+		background-size: cover;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 }
 // keyframe to animate .content p's color
