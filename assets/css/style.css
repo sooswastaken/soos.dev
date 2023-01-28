@@ -111,37 +111,16 @@ body.light-mode {
 }
 .content h1 {
   font-weight: 900;
-  font-size: 10vh;
-  background-image: url(/assets/images/text.gif);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 5vw;
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+.content h2 {
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: var(--text-secondary);
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    color: var(--text-primary);
-  }
-  50% {
-    color: rgb(0, 133, 143);
-  }
-  100% {
-    color: var(--text-primary);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    color: var(--text-primary);
-  }
-  50% {
-    color: rgb(0, 133, 143);
-  }
-  100% {
-    color: var(--text-primary);
-  }
-}
 .footer {
   background-color: var(--primary);
   box-shadow: var(--primary-box-shadow);
@@ -150,7 +129,15 @@ body.light-mode {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-primary);
+}
+.footer a {
+  font-weight: 800;
+  font-size: 1.6em;
+  background-image: url(/assets/images/text.gif);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .mobile-nav {
