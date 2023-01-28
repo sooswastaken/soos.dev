@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
 	</head>
 	<body>
 		<script src="/assets/js/preface.js" defer></script>
@@ -34,7 +34,22 @@
 				</ul>
 			</div>
 			<div class="content">
-				<p>Hello World</p>
+				<div class="text-video">
+					<video autoplay loop muted>
+						<source
+							src="/assets/videos/text.mp4"
+							type="video/mp4"
+						/>
+					</video>
+					<div class="text">
+						<p>Hello World</p>
+					</div>
+					<script>
+						// set playBackRate to 0.5
+						var video = document.getElementsByTagName("video")[0];
+						video.playbackRate = 5;
+					</script>
+				</div>
 			</div>
 			<div class="footer">
 				<p>06'</p>

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Quicksand", sans-serif;
+	font-family: "Lato", sans-serif;
 }
 
 .main {
@@ -72,6 +72,7 @@ body.light-mode {
 			font-size: 4vh;
 			padding-bottom: 0.16em;
 			margin-left: 0.2em;
+			font-weight: 600;
 		}
 	}
 
@@ -86,7 +87,7 @@ body.light-mode {
 		transition: 0.3s;
 		cursor: pointer;
 		font-size: 1.4em;
-		font-weight: 800;
+		font-weight: 600;
 		color: var(--text-primary);
 	}
 
@@ -105,7 +106,7 @@ body.light-mode {
 		a {
 			text-decoration: none;
 			font-size: 1.4em;
-			font-weight: 800;
+			font-weight: 400;
 			padding-left: 1em;
 			padding-right: 1em;
 			transition: 0.2s;
@@ -120,13 +121,56 @@ body.light-mode {
 
 .content {
 	flex: 1;
-	// align text dead center
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	p {
-		font-size: 1.4em;
-		font-weight: 1600;
+
+	.text-video {
+		video {
+			position: absolute;
+			// center the video
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			object-fit: cover;
+			overflow: hidden;
+			width: 80%;
+			height: 10em;
+		}
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 80%;
+			height: 10em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: rgb(0, 0, 0);
+			overflow: hidden;
+			background: rgb(255, 255, 255);
+			// q: how do I change the color of the backgrund? it only works with black and I want to use gray
+			// a: use rgba(0,0,0,0.5) instead of #000
+
+			mix-blend-mode: screen;
+			overflow: hidden;
+			p {
+				font-size: 5vw;
+				line-height: 1;
+				font-weight: 900;
+				font-family: sans-serif;
+			}
+		}
+	}
+}
+// keyframe to animate .content p's color
+
+@keyframes color-change {
+	0% {
+		color: var(--text-primary);
+	}
+	50% {
+		color: rgb(0, 133, 143);
+	}
+	100% {
 		color: var(--text-primary);
 	}
 }
@@ -163,7 +207,7 @@ body.light-mode {
 		a {
 			text-decoration: none;
 			font-size: 1.4em;
-			font-weight: 800;
+			font-weight: 400;
 			padding-top: 1em;
 			padding-bottom: 1em;
 			transition: 0.2s;
@@ -173,13 +217,13 @@ body.light-mode {
 		button {
 			border: none;
 			background-color: var(--button-primary);
-			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.243);
 			padding: 0.5em;
 			border-radius: 0.25em;
 			transition: 0.3s;
 			cursor: pointer;
 			font-size: 1.4em;
-			font-weight: 800;
+			font-weight: 600;
 			color: var(--text-primary);
 			position: fixed;
 			bottom: 0;
