@@ -128,15 +128,30 @@ body.light-mode {
 
 	h1 {
 		font-weight: 900;
-		font-size: 5vw;
+		font-size: 2vw;
 		color: var(--text-primary);
 		margin-bottom: 0.5em;
 	}
 
-	h2 {
+
+	p {
 		font-weight: 400;
-		font-size: 2.5vw;
+		font-size: 2vh;
 		color: var(--text-secondary);
+
+		a {
+			color: white;
+			border-radius: 0.1em;
+			padding: 0.1em;
+
+			&[alt="discord"] {
+				background-color: rgb(101, 122, 227);
+			}
+
+			&[alt="email"] {
+				background-color: red;
+			}
+		}
 	}
 }
 // keyframe to animate .content p's color

@@ -111,14 +111,25 @@ body.light-mode {
 }
 .content h1 {
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 2vw;
   color: var(--text-primary);
   margin-bottom: 0.5em;
 }
-.content h2 {
+.content p {
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 2vh;
   color: var(--text-secondary);
+}
+.content p a {
+  color: white;
+  border-radius: 0.1em;
+  padding: 0.1em;
+}
+.content p a[alt=discord] {
+  background-color: rgb(101, 122, 227);
+}
+.content p a[alt=email] {
+  background-color: red;
 }
 
 .footer {
