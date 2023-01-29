@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: http://soos.dev/sitemap.xml
