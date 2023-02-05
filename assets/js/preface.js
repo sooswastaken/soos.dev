@@ -31,8 +31,3 @@ window
 			}
 		}
 	});
-
-// if safari, add "safari" class to body
-if (navigator.userAgent.indexOf("Safari") != -1) {
-	document.body.classList.add("safari");
-}
