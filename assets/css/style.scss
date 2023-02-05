@@ -126,11 +126,16 @@ body.light-mode {
 	justify-content: center;
 	align-items: center;
 
-	h1 {
+	h2 {
 		font-weight: 900;
 		font-size: 2.5vw;
 		color: var(--text-primary);
 		margin-bottom: 0.5em;
+		background-image: url(/assets/images/text.gif);
+		background-size: cover;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 
 	p {
@@ -167,11 +172,8 @@ body.light-mode {
 	a {
 		font-weight: 800;
 		font-size: 1.6em;
-		background-image: url(/assets/images/text.gif);
-		background-size: cover;
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
+		text-decoration: none;
+		color: var(--text-primary);
 	}
 }
 
@@ -300,5 +302,14 @@ body.light-mode {
 	}
 	.mobile-nav {
 		display: none;
+	}
+
+	.content {
+		h2 {
+			font-size: 2.5em;
+		}
+		p {
+			font-size: 1.5em;
+		}
 	}
 }
