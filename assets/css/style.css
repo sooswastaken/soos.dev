@@ -10,12 +10,14 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url(/assets/images/text.gif);
+  background-size: cover;
 }
 
 body.dark-mode {
   background-color: rgb(32, 32, 32);
-  --primary: rgb(31, 31, 31);
-  --secondary: rgb(42, 42, 42);
+  --primary: rgba(31, 31, 31, 0.426);
+  --secondary: rgba(42, 42, 42, 0.477);
   --text-primary: rgb(255, 255, 255);
   --text-secondary: rgb(200, 200, 200);
   --button-primary: rgb(50, 50, 50);
@@ -27,11 +29,11 @@ body.dark-mode {
 
 body.light-mode {
   background-color: rgb(244, 244, 244);
-  --primary: rgb(244, 244, 244);
-  --secondary: rgb(227, 227, 227);
-  --text-primary: rgb(0, 0, 0);
-  --text-secondary: rgb(100, 100, 100);
-  --button-primary: rgb(215, 215, 215);
+  --primary: rgba(244, 244, 244, 0.21);
+  --secondary: rgba(227, 227, 227, 0.628);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(222, 222, 222);
+  --button-primary: rgba(215, 215, 215, 0.31);
   --button-primary-hover: rgb(225, 225, 225);
   --button-primary-active: rgb(205, 205, 205);
   --primary-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -114,11 +116,6 @@ body.light-mode {
   font-size: 2.5vw;
   color: var(--text-primary);
   margin-bottom: 0.5em;
-  background-image: url(/assets/images/text.gif);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 .content p {
   font-weight: 400;
